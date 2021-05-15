@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+
+import { Button } from 'react-bootstrap';
+import {Primary,Secondary} from './Components/StatusButtons.stories'
+import {Active} from './Components/CampaignStatusButton.stories'
+import {Button_1, Button_22, Button_22_sm} from './Components/OtherButtons.stories'
+import Abc from './Components/DatePicker'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Button>Hello <i class="fa fa-close"></i></Button>
+      <Primary />
+      <Secondary />
+      <Active />
+      <Button_22 />
+      <Button_22_sm />
+      <Abc/>
     </div>
   );
 }
